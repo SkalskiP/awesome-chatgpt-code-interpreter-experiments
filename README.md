@@ -6,7 +6,7 @@ Our goal is to push ChatGPT + Code Interpreter to the limit. You'll be surprised
 
 ## 💻 code interpreter
 
-TODO
+Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more.
 
 ## 💬 prompts
 
@@ -18,8 +18,21 @@ Currently, OpenAI does not allow deep learning in the Code Interpreter environme
 <summary>👉 steps</summary>
 
 1. Upload input video.
+
+https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/9ec21cf7-84c6-4be6-a8e4-c439dcee945c
+
 2. Confirm that ChatGPT can successfully process the video.
+
+> Extract the first frame from the uploaded video.
+
+![first_frame_new](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/8e62d895-821f-4134-b0e4-5438071e2703)
+
 3. Run Haar Cascade face detection on a single video frame.
+
+> Extract the first frame from the uploaded video. Use Haar Cascade to detect the face and draw a red bounding box around it.
+
+![first_frame](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/65071ecf-f5b2-468a-b85e-8bb1d1a439a3)
+
 4. Run Haar Cascade face detection on the whole video.
 
 > Process video frame by frame. Use Haar Cascade to detect the face on each frame and draw a red bounding box around it. Save output video in mp4 format.
@@ -36,9 +49,9 @@ https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/2610
 
 > Create video with 800x800 resolution. Loop over each frame of the input video. If no face is detected on that frame, skip it. If the face is detected, use box coordinates to crop the original frame, then paste that cropped frame with the face into an 800x800 black output frame. Return the final video in mp4 format.
 
-https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/3ce5a634-ed58-4703-8151-fb799159b14d
-
 </details>
+
+https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/3ce5a634-ed58-4703-8151-fb799159b14d
 
 ### Using OCR to extract text from images
 
