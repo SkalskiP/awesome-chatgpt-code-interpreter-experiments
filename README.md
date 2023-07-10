@@ -6,7 +6,7 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023 it is available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, for the first time, it is possible to upload and download files.
+Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023, it has been available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, it is possible to upload and download files.
 
 <details close>
 <summary>👉 activate code interpreter</summary>
@@ -26,11 +26,11 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 
 </details>
 
-## 💬 prompts
+## 🧪 experiments
 
 ### Detect and track face on the video
 
-Currently, OpenAI does not allow access to pre-trained deep learning models in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
+OpenAI does not allow access to pre-trained deep learning models in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
 
 <details close>
 <summary>👉 steps</summary>
@@ -104,7 +104,7 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 
 1. Upload the MNIST dataset into the Code Interpreter environment.
 
-2. To save hard drive and memory space, only 10% of the original dataset is loaded.
+2. only 10% of the original dataset is loaded to save hard drive and memory space.
 
     <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/7fcf0b4c-9368-478a-b157-dadd4dd4fb83">
     
@@ -153,6 +153,22 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 </details>
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c52e63eb-5fb1-4f7f-9908-25171071f354">
+
+### Object detection, tracking, and counting
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload input video.
+
+    <details close>
+    <summary>👉 display input video</summary>
+    
+    https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/daed62e0-4d29-4925-b12e-323cee42f53f
+
+    </details>
+
+</details>
 
 ### Using OCR to extract text from images
 
