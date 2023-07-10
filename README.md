@@ -12,7 +12,7 @@ Code Interpreter is an official ChatGPT plugin for data analytics, image convers
 
 ### Detect and track face on the video
 
-Currently, OpenAI does not allow deep learning in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
+Currently, OpenAI does not allow deep learning in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. Importantly, you can upload and download files, opening up many new possibilities!
 
 <details close>
 <summary>👉 steps</summary>
