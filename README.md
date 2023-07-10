@@ -8,6 +8,24 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023 it is available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, for the first time, it is possible to upload and download files.
 
+<details close>
+<summary>👉 activate code interpreter</summary>
+
+1. Navigate to ChatGPT settings.
+
+2. Activate Code Interpreter in the "Beta features" tab.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/18fadd19-90d0-4e05-9882-6cfac8990f68">
+
+<br>
+<br>
+
+3. Select GPT-4 + Code Interpreter environment.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/33e5831a-0098-4252-80ec-80d992a254aa">
+
+</details>
+
 ## 💬 prompts
 
 ### Detect and track face on the video
@@ -66,25 +84,43 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/7fcf0b4c-9368-478a-b157-dadd4dd4fb83">
 
+<br>
+<br>
+
 3. Make sure that Code Interpreter knows how to process data.
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/d45fa91c-64de-4a30-9595-3c4f638d04d0">
+
+<br>
+<br>
 
 4. Split data into train and test subsets.
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b677c7d7-9380-470e-a32d-4baa8beaff5f">
 
+<br>
+<br>
+
 5. Train sci-kit learn [Support Vector Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) on the test set.
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/fd8b636f-5fcb-456c-abd9-14eadbd779d7">
+
+<br>
+<br>
 
 6. Evaluate the trained model on the test set.
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/3b0bd652-41dd-4180-9190-dff9bb012a12">
 
+<br>
+<br>
+
 7. Visualize false classification results.
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/216c9203-36be-4ce1-88d2-8bf2a1b3e411">
+
+<br>
+<br>
 
 8. Download the trained model.
 
