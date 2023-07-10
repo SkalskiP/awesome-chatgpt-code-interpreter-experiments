@@ -1,12 +1,12 @@
-<h1 align="center">chatgpt 💬 + code interpreter 💻 prompts</h1>
+<h1 align="center">chatgpt 💬 + code interpreter 💻 experiments</h1>
 
 ## 👋 hello
 
-Our goal is to push ChatGPT + Code Interpreter to the limit. You'll be surprised what's possible without writing even a single line of code. 🔥
+We aim to push ChatGPT + Code Interpreter to its limits, show you what's possible and unlock your creativity! Well, and have a lot of fun doing it! 🔥
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more.
+Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more. It is now available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment and some temporal hard drive space.
 
 ## 💬 prompts
 
@@ -55,7 +55,28 @@ https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/2610
 
 ### Using OCR to extract text from images
 
-🚧 coming soon...
+ChatGPT has access to [Tesseract](https://github.com/tesseract-ocr/tesseract) - one of the most powerful open-source OCR engines. It is not perfect. There are certainly better commercial tools on the market. But it can easily read black text printed on a white sheet of paper.
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload the input image.
+
+![IC-Basic-Invoice-Template_PDF](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/1eee9dd1-e866-4b5a-9a96-dcc88ba91c96)
+
+2. Extract text from the image.
+
+> OCR an image for me and generate a text file.
+
+![F0ldRAaX0AITVBO](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/76c0ab68-e4cb-4003-9a7a-8c4c579c5fec)
+
+3. Annotate the input image with detected text.
+
+> Annotate the input image with detected text using bounding boxes.
+
+</details>
+
+![F0lcjPwWYAASmDX](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/ea24ed74-2916-4473-8265-97303518a632)
 
 ### Classification of images from the MNIST dataset
 
