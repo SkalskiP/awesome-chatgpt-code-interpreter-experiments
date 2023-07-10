@@ -6,13 +6,13 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more. It is now available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, you can upload and download files, opening up many possibilities!
+Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023 it is available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, for the first time, it is possible to upload and download files.
 
 ## 💬 prompts
 
 ### Detect and track face on the video
 
-Currently, OpenAI does not allow deep learning in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
+Currently, OpenAI does not allow access to pre-trained deep learning models in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
 
 <details close>
 <summary>👉 steps</summary>
@@ -53,32 +53,48 @@ https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/2610
 
 https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/3ce5a634-ed58-4703-8151-fb799159b14d
 
-### Using OCR to extract text from images
+### Classification of images from the MNIST dataset
 
-ChatGPT has access to [Tesseract](https://github.com/tesseract-ocr/tesseract) - one of the most powerful open-source OCR engines. It is not perfect. There are certainly better commercial tools on the market. But it can easily read black text printed on a white sheet of paper.
+The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a widely-used collection of handwritten digits that is used to teach computers how to recognize and understand numbers. It consists of thousands of examples of handwritten numbers from 0 to 9, created by different people in different styles. The images are very small - only 28x28 pixels. Therefore, they are great for training in an environment with limited resources.
 
 <details close>
 <summary>👉 steps</summary>
 
-1. Upload the input image.
+1. Upload the MNIST dataset into the Code Interpreter environment.
 
-![IC-Basic-Invoice-Template_PDF](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/1eee9dd1-e866-4b5a-9a96-dcc88ba91c96)
+2. To save hard drive and memory space, only 10% of the original dataset is loaded.
 
-2. Extract text from the image.
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/7fcf0b4c-9368-478a-b157-dadd4dd4fb83">
 
-> OCR an image for me and generate a text file.
+3. Make sure that Code Interpreter knows how to process data.
 
-![F0ldRAaX0AITVBO](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/76c0ab68-e4cb-4003-9a7a-8c4c579c5fec)
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/d45fa91c-64de-4a30-9595-3c4f638d04d0">
 
-3. Annotate the input image with detected text.
+4. Split data into train and test subsets.
 
-> Annotate the input image with detected text using bounding boxes.
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b677c7d7-9380-470e-a32d-4baa8beaff5f">
+
+5. Train sci-kit learn [Support Vector Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html) on the test set.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/fd8b636f-5fcb-456c-abd9-14eadbd779d7">
+
+6. Evaluate the trained model on the test set.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/3b0bd652-41dd-4180-9190-dff9bb012a12">
+
+7. Visualize false classification results.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/216c9203-36be-4ce1-88d2-8bf2a1b3e411">
+
+8. Download the trained model.
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/365dad9b-b40a-4796-81d5-0d722aca3350">
 
 </details>
 
-![F0lcjPwWYAASmDX](https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-prompts/assets/26109316/ea24ed74-2916-4473-8265-97303518a632)
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c52e63eb-5fb1-4f7f-9908-25171071f354">
 
-### Classification of images from the MNIST dataset
+### Using OCR to extract text from images
 
 🚧 coming soon...
 
