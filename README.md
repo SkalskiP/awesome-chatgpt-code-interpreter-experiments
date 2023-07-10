@@ -6,13 +6,13 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more. It is now available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment and some temporal hard drive space.
+Code Interpreter is an official ChatGPT plugin for data analytics, image conversions, editing code, and more. It is now available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, you can upload and download files, opening up many possibilities!
 
 ## 💬 prompts
 
 ### Detect and track face on the video
 
-Currently, OpenAI does not allow deep learning in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. Importantly, you can upload and download files, opening up many new possibilities!
+Currently, OpenAI does not allow deep learning in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
 
 <details close>
 <summary>👉 steps</summary>
