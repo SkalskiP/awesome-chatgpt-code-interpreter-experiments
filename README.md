@@ -32,11 +32,11 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 - You can upload a maximum of 100 MB. `(*)`
 - Runs only Python code. `(*)`
 - Does not allow installation of external Python packages. `(*)`
-- When the environment dies you lose the entire state. Links that allowed you to download files stop working.
+- When the environment dies, you lose the entire state. Links that allowed you to download files stopped working.
 
 `(*)` - it is possible to bypass these restrictions
 
-## 🧪 experiments
+## ⛓️ jailbreaks
 
 ### Install external Python packages
 
@@ -61,9 +61,11 @@ Code Interpreter has a set of pre-installed Python packages. What if the environ
 
 3. Import your package.
 
-    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b96dc0ea-d720-4778-8ffa-70a41e17984f">
-
 </details>
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b96dc0ea-d720-4778-8ffa-70a41e17984f">
+
+## 🧪 experiments
 
 ### Detect and track face on the video
 
