@@ -40,7 +40,7 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 
 ### Install external Python packages
 
-Code Interpreter has a set of pre-installed Python packages. What if the environment doesn't have the package you want to use?
+Code Interpreter has a set of pre-installed Python packages. Since CI does not have access to the Internet, you cannot install packages from outside the environment. ChatGPT will also not allow you to install add-on packages via `.whl` files.
 
 <details close>
 <summary>👉 steps</summary>
@@ -64,6 +64,42 @@ Code Interpreter has a set of pre-installed Python packages. What if the environ
 </details>
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b96dc0ea-d720-4778-8ffa-70a41e17984f">
+
+### Running Java Script app through Code Interpreter
+
+Code Interpreter is an experimental ChatGPT plugin that can write Python to a Jupyter Notebook and execute it in a sandbox. This makes it impossible to execute code written in a language other than Python.
+
+[Deno](https://deno.land/) is server-side JavaScript runtime that is packaged as a single binary.
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload compressed Deno binary and make it executable.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/4e34772c-1325-450c-a5ac-c70dd9e127c9">
+    
+    <br>
+    <br>
+
+2. Ask nicely.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/781b2a66-2d95-47f0-8345-f33c46f7327c">
+    
+    <br>
+    <br>
+
+3. Write a hello world Deno program and execute it.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c8c7f1c6-0692-4940-be0a-31d7f56e0d08">
+    
+    <br>
+    <br>
+
+4. Ask nicely once again.
+
+</details>
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/8eb93cc1-35c7-4998-a351-fb42789734d8">
 
 ## 🧪 experiments
 
