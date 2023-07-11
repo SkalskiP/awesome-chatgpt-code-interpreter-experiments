@@ -54,7 +54,7 @@ Code Interpreter has a set of pre-installed Python packages. What if the environ
 
 2. Ask nicely.
 
-    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/e9d4abf5-0cc2-485d-88b0-22430517e8df">
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c0d7acce-bd96-4eac-a4b4-841ad2143439">
     
     <br>
     <br>
@@ -270,3 +270,8 @@ OpenAI does not allow object detection models in the Code Interpreter environmen
 We would love your help in making this repository even better! If you know of an amazing prompt you would like to share, or if you have any suggestions for improvement, feel free to open an
 [issue](https://github.com/SkalskiP/awesome-code-interpreter-prompts/issues) or submit a
 [pull request](https://github.com/SkalskiP/awesome-code-interpreter-prompts/pulls).
+
+## 🙏 acknowledgments
+
+- ["Expanding ChatGPT Code Interpreter with Python packages, Deno and Lua"](https://til.simonwillison.net/llms/code-interpreter-expansions) by [Simon Willison](https://twitter.com/simonw)
+- ["Code Interpreter == GPT 4.5"](https://www.latent.space/p/code-interpreter#details) by [Simon Willison](https://twitter.com/simonw), [Alex Volkov](https://twitter.com/altryne), [Aravind Srinivas](https://twitter.com/AravSrinivas) and [Alex Graveley](https://twitter.com/alexgraveley)
