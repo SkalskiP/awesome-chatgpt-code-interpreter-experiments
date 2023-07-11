@@ -193,6 +193,74 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c52e63eb-5fb1-4f7f-9908-25171071f354">
 
+### Detect, track, and count
+
+OpenAI does not allow object detection models in the Code Interpreter environment. To carry out detection and tacking, we must take advantage of the unique colors of the objects we are interested in.
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload input video.
+
+    <details close>
+    <summary>👉 display input video</summary>
+    
+    https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/8e2ec17b-5ec5-4d29-af93-ea249ba7358e
+
+    </details>
+
+2. Confirm that ChatGPT can successfully process the video. Extract the first frame and display it.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/13f69897-4546-4408-952e-db3d0905965b">
+    
+    <br>
+    <br>
+
+3. Isolate light blue color objects.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/cdc3a35c-8dc5-4ad6-8720-998adbc0147f">
+    
+    <br>
+    <br>
+
+4. Draw boxes around the clusters of blue pixels.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/5c3b81b1-2c03-40b4-a0dd-b06712e7924b">
+    
+    <br>
+    <br>
+
+5. Filter out small clusters of blue pixels.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/e237a63b-cafd-495f-a3fa-77231600681b">
+    
+    <br>
+    <br>
+
+6. Apply IoU-based tracking.
+
+    <details close>
+    <summary>👉 display result video</summary>
+
+    https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/81db5d54-7184-46c4-b363-4ef71f55e403
+
+    </details>
+
+7. Add object counting.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/0a4cf679-9369-4ee5-be97-7e41476a072d">
+    
+    <br>
+    <br>
+
+8. Remove false detections.
+
+   <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/71864525-f01e-4aeb-9eef-016774abf675">
+    
+</details>
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/6b7573d3-2fbf-47c2-ba6a-f20659583d4d">
+
 ### Using OCR to extract text from images
 
 🚧 coming soon...
