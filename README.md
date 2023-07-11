@@ -6,7 +6,7 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023 it is available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, for the first time, it is possible to upload and download files.
+Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023, it has been available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, it is possible to upload and download files.
 
 <details close>
 <summary>👉 activate code interpreter</summary>
@@ -26,11 +26,48 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 
 </details>
 
-## 💬 prompts
+## ⚠️ limitations
+
+- No internet access.
+- You can upload a maximum of 100 MB. `(*)`
+- Runs only Python code. `(*)`
+- Does not allow installation of external Python packages. `(*)`
+- When the environment dies you lose the entire state. Links that allowed you to download files stop working.
+
+`(*)` - it is possible to bypass these restrictions
+
+## 🧪 experiments
+
+### Install external Python packages
+
+Code Interpreter has a set of pre-installed Python packages. What if the environment doesn't have the package you want to use?
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload your `.whl` file and ask ChatGPT to install it.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c2a2cdd5-4847-40da-810f-6b7ddc4418f7">
+    
+    <br>
+    <br>
+
+2. Ask nicely.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/e9d4abf5-0cc2-485d-88b0-22430517e8df">
+    
+    <br>
+    <br>
+
+3. Import your package.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b96dc0ea-d720-4778-8ffa-70a41e17984f">
+
+</details>
 
 ### Detect and track face on the video
 
-Currently, OpenAI does not allow access to pre-trained deep learning models in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
+OpenAI does not allow access to pre-trained deep learning models in the Code Interpreter environment. However, it is still possible to detect and track objects. We just need to be more creative. [Haar Cascade](https://en.wikipedia.org/wiki/Haar-like_feature) was one of the most popular approaches to face detection in old-school computer vision. 
 
 <details close>
 <summary>👉 steps</summary>
@@ -104,7 +141,7 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 
 1. Upload the MNIST dataset into the Code Interpreter environment.
 
-2. To save hard drive and memory space, only 10% of the original dataset is loaded.
+2. only 10% of the original dataset is loaded to save hard drive and memory space.
 
     <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/7fcf0b4c-9368-478a-b157-dadd4dd4fb83">
     
