@@ -26,7 +26,44 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 
 </details>
 
+## ⚠️ limitations
+
+- No internet access.
+- You can upload a maximum of 100 MB. `(*)`
+- Runs only Python code. `(*)`
+- Does not allow installation of external Python packages. `(*)`
+- When the environment dies you lose the entire state. Links that allowed you to download files stop working.
+
+`(*)` - it is possible to bypass these restrictions
+
 ## 🧪 experiments
+
+### Install external Python packages
+
+Code Interpreter has a set of pre-installed Python packages. What if the environment doesn't have the package you want to use?
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload your `.whl` file and ask ChatGPT to install it.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c2a2cdd5-4847-40da-810f-6b7ddc4418f7">
+    
+    <br>
+    <br>
+
+2. Ask nicely.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/e9d4abf5-0cc2-485d-88b0-22430517e8df">
+    
+    <br>
+    <br>
+
+3. Import your package.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/b96dc0ea-d720-4778-8ffa-70a41e17984f">
+
+</details>
 
 ### Detect and track face on the video
 
@@ -153,22 +190,6 @@ The [MNIST](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) dataset is a 
 </details>
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c52e63eb-5fb1-4f7f-9908-25171071f354">
-
-### Object detection, tracking, and counting
-
-<details close>
-<summary>👉 steps</summary>
-
-1. Upload input video.
-
-    <details close>
-    <summary>👉 display input video</summary>
-    
-    https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/daed62e0-4d29-4925-b12e-323cee42f53f
-
-    </details>
-
-</details>
 
 ### Using OCR to extract text from images
 
