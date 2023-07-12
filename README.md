@@ -418,7 +418,44 @@ OpenAI does not allow object detection models in the Code Interpreter environmen
 
 ### Using OCR to extract text from images
 
-🚧 coming soon...
+One of the dependencies that the ChatGPT Code Interpreter has at its disposal is [Tesseract](https://github.com/tesseract-ocr/tesseract). It is a free and open-source optical character recognition (OCR) engine. CI can use Tesseract to extract text from the document you uploaded and then use its LLM capabilities to structure it.
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Upload the input image and use OCR to extract text.
+
+    <details close>
+    <summary>👉 display input image</summary>
+    
+   <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/2d377684-abc5-41b5-8139-3f7df1a2ccf6">
+
+    </details>
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/f59f525d-bbdc-4d44-b849-19d5359c73c9">
+    
+    <br>
+    <br>
+
+2. ChatGPT understands that the uploaded file is a resume.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/c311ee4d-5577-4e99-87fb-f1396aad6eaa">
+    
+    <br>
+    <br>
+
+3. Restructure extracted text.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/bcd379ba-b49f-4c83-a041-80fdc7f4d2db">
+    
+    <br>
+    <br>
+
+4. Annotate input image with extracted information.
+    
+</details>
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/92d2cce6-9bd7-4a9d-9f4d-315f3fa40f75">
 
 ## 🦸 contribution
 
