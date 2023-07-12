@@ -36,6 +36,13 @@ Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt
 
 `(*)` - it is possible to bypass these restrictions
 
+## 💁🏻‍♂️ pro tips
+
+- Always ask CI to make sure that import and variables are defined. They are constantly disappearing from the context.
+- Try not to print too many logs and results (like embedding values). They can consume your context window very quickly.
+- Always verify that the files are still in the environment.
+- Add `notalk;justgo` to the end of your prompts.
+
 ## ⛓️ jailbreaks
 
 ### Install external Python packages
