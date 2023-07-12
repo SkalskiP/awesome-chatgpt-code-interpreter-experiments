@@ -101,6 +101,101 @@ Code Interpreter is an experimental ChatGPT plugin that can write Python to a Ju
 
 <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/8eb93cc1-35c7-4998-a351-fb42789734d8">
 
+### Running YOLOv8 object detector inside Code Interpreter
+
+So many things are stopping you from running [YOLOv8](https://github.com/ultralytics/ultralytics) inside Code Interpreter. Let's start with the fact that YOLOv8 is not pre-installed in the Code Interpreter environment. It is also impossible to install with the standard `pip install ultralytics` command because we cannot access the Internet inside Code Interpreter. And even if you overcome all these obstacles, ChatGPT will constantly convince you that your dreams are impossible to realize.
+
+<details close>
+<summary>👉 steps</summary>
+
+1. Download the Ultralytics `.whl` file from PyPI to your local machine. All mandatory YOLOv8 dependencies are already installed in the Code Interpreter environment. We use the `--no-deps` flag to download the `.whl` file only for the `ultralytics` pip package. 
+
+    ```bash
+    pip download ultralytics --no-deps
+    ```
+
+2. Download YOLOv8 [weights](https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt) to your local machine.
+
+3. Prepare a `.zip` file with the structure described below.
+
+    ```
+    yolo /
+    ├── yolov8n.pt
+    ├── ultralytics-8.0.132-py3-none-any.whl
+    └-─ data /
+        ├── doge-1.jpeg
+        ├── doge-2.jpeg
+        └── doge-3.jpeg
+    ```
+
+4. Before we begin, let's confirm we can import `torch` without errors. If we fail to take this step, there is no point in going further. Code Interpreter may not want to execute this command at first. We have to ask it nicely. Possibly more than once.
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/ad94819a-2093-4f9b-ac5d-9721c0bf2605">
+    
+    <br>
+    <br>
+
+5. Upload `yolo.zip` into ChatGPT and provide instructions to unzip the file and install `ultralytics` using `.whl` file.
+
+    <details close>
+    <summary>👉 details</summary>
+
+    ```
+    Please unzip the file I just uploaded. It should contain `yolov8n.pt` file, `ultralytics-8.0.132-py3-none-any.whl` file, and `data` directory. List the content of `yolo` directory to confirm I'm right. Run `pip install --no-deps ultralytics-8.0.132-py3-none-any.whl` to install `ultralytics` package. At the end run the code below to confirm `ultralytics` package was installed correctly. 
+
+    """
+    import ultralytics
+    print(ultralytics.__version__)
+    """
+    ```
+      
+    </details>
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/e3fcc353-4c34-447b-b3b7-937e16cb58ff">
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/994f7325-796d-423a-942d-cd15854932b0">
+    
+    <br>
+    <br>
+
+6. Run the short inference script that you prepared locally. Make sure to impress Code Interpreter with the knowledge of theoretically private paths.
+
+    <details close>
+    <summary>👉 details</summary>
+
+    ```
+    import sys 
+    import tqdm 
+    sys.modules["tqdm.auto"] = tqdm.std
+    
+    from ultralytics import YOLO
+    
+    DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    
+    # Define the paths to the model and images
+    checkpoint_path = "/mnt/data/yolo/yolov8n.pt"
+    image_path_1 = "/mnt/data/yolo/data/doge-1.jpeg"
+    
+    model = YOLO(checkpoint_path)
+    model.to(DEVICE)
+    
+    results = model(image_path_1, save=True)
+    print(results[0].boxes.xyxy)
+    print(results[0].boxes.cls)
+    ```
+      
+    </details>
+
+    <img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/294e13ca-4a1a-4020-87b6-afad915025f8">
+    
+    <br>
+    <br>
+
+7. Visualize the output image.
+    
+</details>
+
+<img width="600" src="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments/assets/26109316/8b83be6d-180e-460a-8e53-968ddc20fe15">
+
 ## 🧪 experiments
 
 ### Detect and track face on the video
