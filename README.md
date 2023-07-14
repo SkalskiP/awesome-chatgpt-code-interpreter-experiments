@@ -6,7 +6,7 @@ We aim to push ChatGPT + Code Interpreter to its limits, show you what's possibl
 
 ## 💻 code interpreter
 
-Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023, it has been available to all ChatGPT Plus users. It provides OpenaAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, it is possible to upload and download files.
+Code Interpreter is an official ChatGPT [plugin](https://openai.com/blog/chatgpt-plugins) for data analytics, image conversions, editing code, and more. Since July 6th, 2023, it has been available to all ChatGPT Plus users. It provides OpenAI models with a working Python interpreter in a sandboxed, firewalled execution environment. Importantly, it is possible to upload and download files.
 
 <details close>
 <summary>👉 activate code interpreter</summary>
